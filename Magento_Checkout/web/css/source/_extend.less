@@ -1,0 +1,82 @@
+@media only screen and (min-width: @screen__xxs)
+{
+    .header-info {
+        display: none;
+    }
+   
+}
+@media only screen and (min-width: @screen__s)
+{
+    .block.block-content {
+        margin-top: 10px;
+    }
+    .minicart-wrapper .action.showcart {
+        margin-top: 10px
+    }
+
+}
+@media only screen and (min-width: @screen__m)
+{
+    .header-info {
+        margin-right: -13px;
+        font-family: 'Fugue-a';
+        display: flex;
+        float:right;
+            .header-info-account {
+                display: flex;
+                padding: 0 6px;
+                &::before {
+                    .minxin-line-awesome("\f007","Line Awesome Free");
+                    font-size:27px;
+                    margin-top:-6px;
+                }
+                a { 
+                    .set-a('0');
+                }
+            }
+            .header-info-contact {
+                display: flex;
+                &::before {
+                    .minxin-line-awesome("\f095", "Line Awesome Free");
+                    font-size:27px;
+                    margin-top: -6px
+                }
+                a {
+                    .set-a('0');
+                }
+            }
+        }
+        .minicart-wrapper {
+            padding-left: 0;
+        }
+        .minicart-wrapper .action.showcart {
+            margin-top: 0;
+        }
+}
+@media only screen and (min-width: @screen__l) {
+    .header-info-account {
+        padding: 0 20px;
+    }
+    .header-info {
+        .header-info-account {
+            padding: 0 15px;
+            &::before {
+                .minxin-line-awesome("\f007","Line Awesome Free");
+                font-size:31px;
+            }
+            a {
+                .set-a('6px');
+            }
+        }
+        .header-info-contact {
+            display: flex;
+            &::before {
+                .minxin-line-awesome("\f095", "Line Awesome Free");
+                font-size:31px;
+            }
+            a {
+                .set-a('6px');
+            }
+        }
+    }
+}

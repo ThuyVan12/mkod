@@ -1,0 +1,45 @@
+& when (@media-common=true) {
+    .nav-sections {
+        background: @color-nav;
+        .navigation {
+            background: @color-nav;
+            max-width: 1318px;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                font-family: none;
+            }
+        }
+    }
+    .breadcrumbs {
+        max-width: 1318px;
+        margin-top: 10px;
+    }
+    .action.primary {
+        background-color: @color-btn-catalog;
+        border-color: @color-btn-catalog;
+        color: #ffff;
+    }
+    
+}
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__m){
+    .navigation .level0>.level-top {
+        color: #000000;
+    }
+    .nav-sections .navigation ul {
+        font-size: 11px;
+    }
+    .sections.nav-sections  {
+        margin-bottom: 0;
+    }
+}
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__l)
+{
+    .nav-sections .navigation ul {
+        font-size: 15px;
+        justify-content: space-between;
+        margin-top:15px;
+    }
+
+}
