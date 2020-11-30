@@ -81,6 +81,7 @@
         p {
             font-family: 'Opensans';
             text-align: center;
+            line-height: 48px;
             font-weight: 600;
         } 
     }
@@ -163,9 +164,6 @@
         display: none;
         }
     }
-    main#maincontent {
-        max-width: 1318px;
-    }
 }
 @media only screen and (min-width: @screen__xxs) {
     .home-page__banner-content .home-page__banner-content-text p {
@@ -180,6 +178,15 @@
         font-size: 20px;
         line-height: 48px;
         font-weight: 600;
+        margin-top: -10px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .home-page__trending-now {
+        p {
+            font-size: 20px;
+        } 
     }
     .home-page__featured-product-content-text {
         display: none;
@@ -236,9 +243,8 @@
     }
     .home-page__featured-product-title {
         padding-top: 10px;
-        font-size: 36px;
+        font-size: 31px;
         word-spacing: 5px;
-        padding-top: 30px;
         padding-bottom: 10px;
     }
     .footer-top {
@@ -260,6 +266,14 @@
 }
 
 @media only screen and (min-width: @screen__m) {
+    .navigation .level0 > .level-top {
+        padding: 0;
+    }
+    .nav-sections {
+        .navigation ul {
+            font-size: 12px;
+        }
+    }
     .footer-container-mobile {
         display: none;
     }
@@ -304,6 +318,12 @@
                 height: 41px;
             }
         }
+    }
+    .home-page__trending-now {
+        p {
+            font-size: 31px;
+            word-spacing: 5px;
+        } 
     }
     .home-page__featured-product-title {
         padding: 31px;
@@ -366,8 +386,10 @@
         }
 
     } 
+    .nav-sections .navigation ul {
+        font-size: 15px;
+    }
     .home-page__featured-product-title {
-        font-size: 28px;
         margin-top: -5px;
     }
     .home-page__banner-content-btn {

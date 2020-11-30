@@ -1,0 +1,24 @@
+& when (@media-common= true) {
+  .product-next-prev {
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 9px;
+    border-bottom: 1px solid #a7a7a7;
+  }
+}
+@media only screen and (min-width: @screen__m){
+
+  .product-next-prev {
+    .product-next {
+      .mixin-next-pre;
+    }
+    .product-prev {
+      .mixin-next-pre;
+    }
+  } 
+}
+.product-next-prev {
+  margin-bottom: 60px;
+}
